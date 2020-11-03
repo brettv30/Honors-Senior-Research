@@ -5,7 +5,7 @@ The goal of this course is to augment hands-on Artificial Intelligence programmi
 
 Initially we began with datasets containing National Crime Rate and State Crime Rate data. These can be found in the "Section 1 Data" folder. We retreived these datasets from the FBI Crime Stats website which can be semi-recreated from here: https://ucrdatatool.gov/Search/Crime/Crime.cfm. 
 
-The script file is broken up into a total of 8 different sections. Each one indicating a different milestone in this class. 
+The script file is broken up into a total of 8 different sections. Each one indicating a different milestone in this class.  
 
 # Section 1: Exploratory Data Analysis
   - Here we preformed extensive EDA specifically looking at correlations between the crimes in each individual state. Through this analysis we learned that the data is not normally distributed and that it is futile to try to make assumptions about the entire population when looking at one state's crimes.  

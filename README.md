@@ -12,13 +12,22 @@ The script file is broken up into a total of 8 different sections. Each one indi
 
 # Section 2: Regional Correlations, Clustering, and Median Household Income
   - Here we split that data into regions according to the split here: https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf and we included Median Household Income data for the entire nation as well as for each state. This information was obtained from here: https://www.census.gov/content/dam/Census/library/publications/2019/acs/acsbr18-01.pdf.
-  - 
+  - We measured the correlations between each crime based on region and then used K-means clustering to see if we could accurately create clusters within each region. This proved unsuccessful as the clusters had major overlaps and usually did not exceed 3 clusters per group. Based off of these clusters we can accurately tell that the FBI should not be analyzing crime based on regional clusters because it is too difficult to accurately distinguish the differences in the data.
 
 # Section 3: Division Correlations and Clustering by Crime Rate
+- Here we split the data into divisons according the map here: https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf. This sections is essentially the same as Section 2 except that the 4 regions are broken up into 9 divisions. 
+- We did this in an effort to see if it was easier to have distinct clusters based on each division as opposed to each region. 
+- We found the same results as Section 2: The clusters have major overlap and are unable to accurately separate the data from each other. This tells us that the FBI should not be analyzing crime based on division clusters because it is too difficult to accurately distinguish the differences in the data. 
 
-# Section 4: Division Clustering by Crime Rate
+# Section 4: Division Clustering by Crime Rate and Median Household Income (MHI) 
+- In this section we decided to cluster based on all crime rates and Median Household Income (MHI) to see if the introduction of an economic metric was able to introduce some separation between the Division clusters. 
+- Our results proved unsuccessful yet again. The clusters from each division were arguably worse than when we only observed crime rates. This indicated to us that we should introduce another economic metric: poverty rate. Poverty rate was chosen arbitrarily yet it proved highly successful when we analyze it in Seciton 5 and beyond. 
 
 # Section 5: Clustering by Economic Metrics
+- We received our poverty rate data from the link here: https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html. We also attempted to implement the lowest quintile's income distribution but we didn't have enough time to dive into this data: https://www.taxpolicycenter.org/statistics/household-income-quintiles.
+- In this section we create a dataframe that holds both poverty rate and median household income that we then use to create various clusters (2, 4, and 9). Our findings indicated that using only economic metrics and no crime rates were a much better way to distinguish clusters from one another. We used both euclidean and manhattan distances to ensure the distances between the clusters were true. 
+- Through this section we learned that using both poverty rate and median household income were great measures to create clusters related to the four regions and nine divisions in the united states. 
+- Towards the bottom of the section we created the DF csv file that included all economic and crime rate variables in the project. We then opened this file in excel and performed a t-test of correlation significance on all of the data to see which data correlated best with poverty rate. This could have been preformed in R but we wanted to use Excel to gain experience using different analysis tools. We found that Homicide had the highest correlation with Poverty Rate at 0.4008, this is what pushed us to attempt to classify Normal and Low homicide rates for the remainder of the project. 
 
 # Section 6: Decision Trees classifying Normal and Low Homicide Rate
 

@@ -5,6 +5,8 @@ The goal of this course is to augment hands-on Artificial Intelligence programmi
 
 Initially, we began with datasets containing National Crime Rate and State Crime Rate data. These can be found in the "Section 1 Data" folder. We retreived these datasets from the FBI Crime Stats website which can be semi-recreated from here: https://ucrdatatool.gov/Search/Crime/Crime.cfm. 
 
+Each of the section folders contain csv files that provide the data for this project. These are where you will find all the necessary files to get started with this project. 
+
 The script file is broken up into a total of 8 different sections. Each one indicating a different milestone in this class.
 
 # Libraries

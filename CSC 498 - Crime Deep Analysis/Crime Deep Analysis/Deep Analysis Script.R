@@ -4060,15 +4060,3 @@ gbmf_conf_mat = confusionMatrix(
 )
 
 gbmf_conf_mat
-
-
-##### Section 9: Extreme Gradient Boosted Model #####
-library(caret)
-
-
-
-##### Section 10: Neural Network classification ####
-write.csv(no_dc_data, "no_dc_data.csv")
-
-
-

@@ -1,7 +1,7 @@
 # Honors-Senior-Research
 
-Here's a repository containing my R project that I worked on for my CSC 498 course "Honors Senior Research".
-The goal of this course is to augment hands-on Artificial Intelligence programming and build upon the analytics skills I learned in the classroom in my CSC 260 course, "Analysis of Algorithms". The work I completed in that course can be found here: https://github.com/brettv30/Analysis-of-Algorithms.
+A repository containing my R project that I worked on for my CSC 498 course "Honors Senior Research".
+The goal of this course was to augment hands-on Artificial Intelligence programming and build upon the analytics skills I learned in the classroom in my CSC 260 course, "Analysis of Algorithms". The work I completed in that course can be found here: https://github.com/brettv30/Analysis-of-Algorithms.
 
 Initially, we began with datasets containing National Crime Rate and State Crime Rate data. These can be found in the "Section 1 Data" folder. We retreived these datasets from the FBI Crime Stats website which can be semi-recreated from here: https://ucrdatatool.gov/Search/Crime/Crime.cfm. 
 
@@ -10,7 +10,6 @@ Each of the section folders contain csv files that provide the data for this pro
 The script file is broken up into a total of 8 different sections. Each one indicating a different milestone in this class.
 
 # Libraries
-- Here's a list of all libraries that were used in this project. 
 - moments, ggplot2, ggcorrplot, corrplot, ggrepel, Rmisc, amap, factoextra, cluster, gridExtra, party, partykit, ROCR, boot, randomForest, dplyr, plyr, caret, rpart.plot
 
 # Section 1: Exploratory Data Analysis
@@ -51,4 +50,4 @@ The script file is broken up into a total of 8 different sections. Each one indi
 - We found that the average accuracy of the decision tree was 0.92006, the random forest was 0.95481, and the non-tuned gradient boosted model was 0.95547. After tuning the hyperparameters of the gradient boosted model we were able to improve the accuracy to 0.95849, thus proving that the tuned gradient boosted model was the best performer out of the group when attempting to classify homicide rates between NORMAL and LOW. 
 
 # Moving Forward
-- We transitioned from using R to using the DataRobot software as a means to use neural networks to analyze the data. This was done in an effort to get me comfortable with creating artifical neural networks as well as learning about the operations within a recursive neural network. 
+- A final milestone for the semester was to determine what type of Neural Network (CNN or RNN) would have preformed better on the data set. Then we wrote a small paper analyzing the exact hyperparameters of the Neural Network as well as outlined our expectations for the Network's performance.  

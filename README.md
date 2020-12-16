@@ -1,4 +1,4 @@
-# Senior Honors Research
+# Honors Senior Research
 
 A repository containing my R project that I worked on for my CSC 498 course "Honors Senior Research".
 The goal of this course was to augment hands-on Artificial Intelligence programming and build upon the analytics skills I learned in the classroom in my CSC 260 course, "Analysis of Algorithms". The work I completed in that course can be found here: https://github.com/brettv30/Analysis-of-Algorithms.
